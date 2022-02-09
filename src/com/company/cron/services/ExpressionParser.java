@@ -7,6 +7,9 @@ import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
 
+/**
+ * author Arpita Saha
+ */
 public abstract class ExpressionParser {
     List<Character> allowedCharacters;
     int maxRange;

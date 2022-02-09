@@ -3,6 +3,9 @@ package com.company.cron.services;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * author Arpita Saha
+ */
 public class DayParser extends ExpressionParser{
     private static DayParser dayParser;
     private DayParser(){

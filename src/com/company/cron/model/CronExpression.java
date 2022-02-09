@@ -5,6 +5,9 @@ import com.company.cron.services.*;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * author Arpita Saha
+ */
 public class CronExpression {
     List<Integer>minutes;
     List<Integer>hours;

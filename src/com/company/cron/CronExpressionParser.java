@@ -5,6 +5,9 @@ import com.company.cron.model.CronExpression;
 import java.util.Arrays;
 import java.util.List;
 
+/**
+ * author Arpita Saha
+ */
 public class CronExpressionParser {
 
     public static void main(String[] args) {

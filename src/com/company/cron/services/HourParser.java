@@ -3,6 +3,9 @@ package com.company.cron.services;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * author Arpita Saha
+ */
 public class HourParser extends ExpressionParser {
 
     private static HourParser hourParser;
