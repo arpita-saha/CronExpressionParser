@@ -30,27 +30,37 @@ public class CronExpression {
     }
 
     public void decodeAndSetMinutes(String minuteExpression){
-        if(minuteExpression.isEmpty() || !minuteParser.isValidExpression(minuteExpression))return;
+        if(minuteExpression.isEmpty() || !minuteParser.isValidExpression(minuteExpression)){
+            return;
+        }
         this.minutes = minuteParser.getParsedValue(minuteExpression);
     }
 
     public void decodeAndSetHours(String hourExpression){
-        if(hourExpression.isEmpty() || !hourParser.isValidExpression(hourExpression))return;
+        if(hourExpression.isEmpty() || !hourParser.isValidExpression(hourExpression)){
+            return;
+        }
         this.hours = hourParser.getParsedValue(hourExpression);
     }
 
     public void decodeAndSetDays(String dayExpression){
-        if(dayExpression.isEmpty() || !dayParser.isValidExpression(dayExpression))return;
+        if(dayExpression.isEmpty() || !dayParser.isValidExpression(dayExpression)){
+            return;
+        }
         this.days = dayParser.getParsedValue(dayExpression);
     }
 
     public void decodeAndSetMonths(String monthExpression){
-        if(monthExpression.isEmpty() || !monthParser.isValidExpression(monthExpression))return;
+        if(monthExpression.isEmpty() || !monthParser.isValidExpression(monthExpression)){
+            return;
+        }
         this.months = monthParser.getParsedValue(monthExpression);
     }
 
     public void decodeAndSetWeekDay(String weekDayExpression){
-        if(weekDayExpression.isEmpty() || !dayParser.isValidExpression(weekDayExpression))return;
+        if(weekDayExpression.isEmpty() || !dayParser.isValidExpression(weekDayExpression)){
+            return;
+        }
         this.weekDays = weekDayparser.getParsedValue(weekDayExpression);
     }
 

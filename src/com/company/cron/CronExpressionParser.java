@@ -8,9 +8,15 @@ import java.util.List;
 public class CronExpressionParser {
 
     public static void main(String[] args) {
+
+        if(args.length <1){
+            System.out.println("Please enter cron expression to parse");
+            return;
+        }
+
         System.out.println("Given cron expression: " + args[0] );
         String expression = args[0];
-//        String expression = "1/15 0 1,15 * 1-5 /usr/bin/find";
+//        String expression = "1/15 0 1,*15 * 1-5 /usr/bin/find";
 
         CronExpression cronExpression = getCronExpression(expression);
         cronExpression.printExpression();
